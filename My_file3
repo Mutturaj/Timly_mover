@@ -1,0 +1,30 @@
+c class Ftech_empdetails {
+
+	public static void main(String[] args) {
+			List<Empdetails> emp=new ArrayList();
+					Empdetails e1=new Empdetails(101, "abc",22, 10000);
+							Empdetails e2=new Empdetails(102, "def",25, 20000);
+									Empdetails e3=new Empdetails(103, "ghi",23, 30000);
+											Empdetails e4=new Empdetails(104, "jkl",28, 40000);
+													Empdetails e5=new Empdetails(105, "mno",29, 50000);
+															
+																	emp.add(e1);
+																			emp.add(e2);
+																					emp.add(e3);
+																							emp.add(e4);
+																									emp.add(e5);
+																											System.out.println("original sal");
+																													System.out.println(emp);
+																															
+																																	List<Empdetails> incrementalsal = emp.stream().map(e -> {
+																																				if(e.getAge()>25)
+																																							{
+																																											e.setSalary(e.getSalary()*1.10);
+																																														}
+																																																	return e;
+																																																			}).collect(Collectors.toList());
+																																																					System.out.println("incremented sal");
+																																																							System.out.println(incrementalsal);
+																																																									
+																																																									}:wq
+
