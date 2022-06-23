@@ -12,6 +12,6 @@ c class Mousemover {
 																			WebElement ele = driver.findElement(By.xpath("//driver[.='Fashion']"));
 																					Actions a=new Actions(driver);
 																							a.moveToElement(ele).perform();
-																							 
+																							 driver.cose();
 																							 	}
 
